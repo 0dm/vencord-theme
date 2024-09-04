@@ -149,12 +149,6 @@ html:root,
   --button-outline-primary-text: var(--synqats-gb-grey-2);
   --button-outline-primary-text-active: var(--synqats-gb-fg-1);
   --button-outline-primary-text-hover: var(--synqats-gb-fg-1);
-  --scrollbar-thin-thumb: var(--synqats-gb-bg-1);
-  --scrollbar-thin-track: var(--synqats-gb-bg-0);
-  --scrollbar-auto-thumb: var(--synqats-gb-bg-0);
-  --scrollbar-auto-track: var(--synqats-gb-bg-1);
-  --scrollbar-auto-scrollbar-color-thumb: var(--synqats-gb-bg-1);
-  --scrollbar-auto-scrollbar-color-track: var(--synqats-gb-bg-1);
   --brand-experiment: var(--synqats-gb-accent-purple);
   --brand-100: var(--synqats-gb-accent-purple);
   --brand-130: var(--synqats-gb-accent-purple);
@@ -437,10 +431,10 @@ section[class*=panels] div[class*=container] {
   margin-bottom: unset;
 }
 
-div[class*=members] [class*=member]:not(.vc-membercount-online-dot) {
+div[class*=members] [class*=member] {
+  margin-left: unset;
   background: unset;
 }
-
 
 div[class*=gradientContainer][class*=gradientBottom] {
   --gradient-color: 20, 22, 23;
@@ -474,7 +468,7 @@ main[class*=chatContent] {
 }
 
 [class*=member] [class*=subText] {
-  display: flex;
+  display: none;
 }
 
 [class*=membersGroup] {
